@@ -33,13 +33,10 @@ public class LiquidContainers2 {
 
                     break;
                 case "move":
-                    
-                    // if its negative or the value to move is return and do nothing
                     if (amount <= 0 || firstContainer.contains() == 0) {
                         return;
                     }
-                    // if it ends up being a negative valule when moving says trying to move 40 from 30
-                    // just move the total value of firstcontainer
+
                     if (firstContainer.contains() - amount < 0) {
                         amount = firstContainer.contains();
                     }
