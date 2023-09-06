@@ -11,13 +11,12 @@ public class LiquidContainers {
 
         boolean shouldLoop = true;
 
-        try {  //catch indexout of bound when spliting user input i.e they don't stype a string split by space
+        try {  
             while (shouldLoop) {
 
                 System.out.println("First: " + firstContainer + "/100\n"
                         + "Second: " + secondContainer + "/100");
 
-                //switch statments seem much eaiser to read
                 String input = scanner.nextLine();
                 if (input.toLowerCase().equals("quit")) {
 
@@ -88,6 +87,7 @@ public class LiquidContainers {
                 }
 
             }
+            
         } catch (IndexOutOfBoundsException Error) {
             System.out.println("There was an Error reading input: " + Error.getMessage());
 
